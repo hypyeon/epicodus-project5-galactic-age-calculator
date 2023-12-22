@@ -1,4 +1,4 @@
-# Super Galactic Age Calculator
+# Super Galactic Age Calculator 🪐
 by [Hayeong Pyeon](https://www.hayeong.website)
 
 ## Table of Contents
