@@ -13,4 +13,8 @@ describe('AgeCalculator', () => {
         const ageInMars = new AgeCalculator(40);
         expect(ageInMars.calculate('Mars')).toEqual(21.27);
     });
+    test('should correctly calculate current age in Jupiter to fixed 2 decimals', () => {
+        const ageInJupiter = new AgeCalculator(40);
+        expect(ageInJupiter.calculate('Jupiter')).toEqual(3.37);
+    });
 })
