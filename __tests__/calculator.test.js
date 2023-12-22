@@ -5,4 +5,8 @@ describe('AgeCalculator', () => {
         const ageInMercury = new AgeCalculator(40);
         expect(ageInMercury.calculate('Mercury')).toEqual(166.66);
     });
+    test('should correctly calculate current age in Venus to fixed 2 decimals', () => {
+        const ageInVenus = new AgeCalculator(40);
+        expect(ageInVenus.calculate('Venus')).toEqual(64.51);
+    });
 })
