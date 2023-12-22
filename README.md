@@ -31,8 +31,8 @@ by [Hayeong Pyeon](https://www.hayeong.website)
 
 
 ## Known Bugs
-- Currently ...
-- Last updated: 
+- No bug found.
+- Last updated: Dec 21, 2023 
 
 ## License
 [MIT](/LICENSE.txt) Copyright © 2023 Hayeong Pyeon
