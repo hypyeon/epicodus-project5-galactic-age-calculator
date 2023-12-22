@@ -31,8 +31,9 @@ body {
     font-family: $primaryFont;
     h1 {
         font-family: $fontTitle;
-        text-shadow: 0 0 18px yellow;
+        text-shadow: 0 0 15px rgb(71, 255, 212);
         color: rgba(255, 255, 255, 0.95);
+        letter-spacing: 2px;
     }
 }
 .flex {
