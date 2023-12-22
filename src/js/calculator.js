@@ -9,7 +9,8 @@ export default class AgeCalculator {
         }
     }
     calculate(planet) {
-
+        const result = this.earthAge / this.planetAgeRatio[planet];
+        return Math.floor(result * 100) / 100;
     }
     yearsSincePast(pastAge) {
 
