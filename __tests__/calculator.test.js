@@ -9,4 +9,8 @@ describe('AgeCalculator', () => {
         const ageInVenus = new AgeCalculator(40);
         expect(ageInVenus.calculate('Venus')).toEqual(64.51);
     });
+    test('should correctly calculate current age in Mars to fixed 2 decimals', () => {
+        const ageInMars = new AgeCalculator(40);
+        expect(ageInMars.calculate('Mars')).toEqual(21.27);
+    });
 })
