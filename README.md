@@ -21,11 +21,12 @@ by [Hayeong Pyeon](https://www.hayeong.website)
 - The difference in years between past birthday and current ages and the difference in years between future birthday and current ages will be conveyed to years in those planets' years. 
 
 ## Setup Requirements
-* Install all packages with `npm install`.
-* Build the project using webpack with `npm run build`.
-* Start a development server with `npm run start`.
-* Lint JS files in the src folder with `npm run lint`.
-* Run tests with Jest using `npm run test`.
+1. Clone this repository to your desktop and open it with a text editor.
+2. Install all packages with `npm install` on terminal.
+3. Build the project using webpack with `npm run build`.
+4. Start a development server with `npm run start`.
+5. Lint JS files in the src folder with `npm run lint`.
+6. Run tests with Jest using `npm run test`.
 
 ## Link
 https://hypyeon.github.io/epicodus-project5-galactic-age-calculator/
