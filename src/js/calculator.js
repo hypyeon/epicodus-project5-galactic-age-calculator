@@ -23,6 +23,13 @@ export default class AgeCalculator {
         return Object.fromEntries(ageMap);
     }
     yearsUntilFuture(futureAge) {
-
+        const ageDifference = futureAge - this.earthAge;
+        const ageMap = new Map();
+        for (const planet in this.planetAgeRatio) {
+            const convertedAge = ageDifference / this.planetAgeRatio[planet];
+            const toFixed = Math.floor(convertedAge * 100) / 100; 
+            ageMap.set(planet, toFixed);
+        };
+        return Object.fromEntries(ageMap);
     }
 }
