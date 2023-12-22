@@ -1,4 +1,4 @@
-# Title
+# Super Galactic Age Calculator
 by [Hayeong Pyeon](https://www.hayeong.website)
 
 ## Table of Contents
@@ -16,8 +16,9 @@ by [Hayeong Pyeon](https://www.hayeong.website)
 - Tests using Jest
 
 ## Description
-- This is ...
-- This is ...
+- This application calculates Earth years to those in 4 different planets: Mercury, Venus, Mars, and Jupiter.
+- Users insert their current age, past birthday age, and future birthday age. 
+- The difference in years between past birthday and current ages and the difference in years between future birthday and current ages will be conveyed to years in those planets' years. 
 
 ## Setup Requirements
 * Install all packages with `npm install`.
