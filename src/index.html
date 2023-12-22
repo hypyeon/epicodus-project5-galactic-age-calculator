@@ -5,33 +5,59 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Super Galactic Age</title>
 </head>
-<body class="flex col flex-center">
-  <h1>Super Galactic Age Calculator</h1>
-  <form class="flex col flex-center">
-    <div>
-      <input type="number" name="age" id="currentAge" min="1" placeholder="Your current age">
-      <input type="number" name="age" id="pastAge" min="1" placeholder="Your past age">
-      <input type="number" name="age" id="futureAge" min="1" placeholder="Your future age">  
-    </div>
-    <button id="calculate">calculate</button>
-  </form>
-  <div class="flex flex-center" id="planets">
-    <div class="planet">
-      <p>in <span class="planetName" id="brown">Mercury</span> year</p>
-      <p id="mercury"></p>
-    </div>
-    <div class="planet">
-      <p>in <span class="planetName" id="pink">Venus</span> year</p>
-      <p></p>
-    </div>
-    <div class="planet">
-      <p>in <span class="planetName" id="orange">Mars</span> year</p>
-      <p></p>
-    </div>
-    <div class="planet">
-      <p>in <span class="planetName" id="yellow">Jupiter</span> year</p>
-      <p id="jupiter"></p>
-    </div>
+<body>
+  <section class="flex col flex-center">
+    <h1>Super Galactic Age Calculator 👽✨</h1>
+    <form class="flex col flex-center">
+      <div>
+        <input type="number" name="age" id="currentAge" min="1" placeholder="Your current age" required>
+        <input type="number" name="age" id="pastAge" min="1" placeholder="Your past age" required>
+        <input type="number" name="age" id="futureAge" min="1" placeholder="Your future age" required>  
+      </div>
+      <button type="submit" id="calculate">calculate</button>
+    </form>  
+    <div class="flex flex-center" id="planets">
+      <div class="planet">
+        <p>in <span class="planetName" id="brown">Mercury</span> year</p>
+        <div>
+          <p id="mercury-now"></p>
+          <p id="mercury-since"></p>
+          <p id="mercury-until"></p>  
+        </div>
+      </div>
+      <div class="planet">
+        <p>in <span class="planetName" id="pink">Venus</span> year</p>
+        <div>
+          <p id="venus-now"></p>
+          <p id="venus-since"></p>
+          <p id="venus-until"></p>  
+        </div>
+      </div>
+      <div class="planet">
+        <p>in <span class="planetName" id="orange">Mars</span> year</p>
+        <div>
+          <p id="mars-now"></p>
+          <p id="mars-since"></p>
+          <p id="mars-until"></p>  
+        </div>
+      </div>
+      <div class="planet">
+        <p>in <span class="planetName" id="yellow">Jupiter</span> year</p>
+        <div>
+          <p id="jupiter-now"></p>
+          <p id="jupiter-since"></p>
+          <p id="jupiter-until"></p>  
+        </div>
+      </div>
+    </div>  
+  </section>
+  <div class="hidden" id="explanation">
+    <h3>What do these numbers indicate?</h3>
+    <ul>
+      <li>Your current age in the planet year.</li>
+      <li>Difference in your current age and your past age in the planet year.</li>
+      <li>Difference in your future age and your current age in the planet year.</li>
+    </ul>
   </div>
 </body>
 </html>

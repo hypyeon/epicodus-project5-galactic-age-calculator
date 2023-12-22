@@ -6,7 +6,7 @@ export default class AgeCalculator {
             Venus: 0.62,
             Mars: 1.88,
             Jupiter: 11.86
-        }
+        };
     }
     calculate(planet) {
         const result = this.earthAge / this.planetAgeRatio[planet];
@@ -19,7 +19,7 @@ export default class AgeCalculator {
             const convertedAge = ageDifference / this.planetAgeRatio[planet];
             const toFixed = Math.floor(convertedAge * 100) / 100; 
             ageMap.set(planet, toFixed);
-        };
+        }
         return Object.fromEntries(ageMap);
     }
     yearsUntilFuture(futureAge) {
@@ -29,7 +29,7 @@ export default class AgeCalculator {
             const convertedAge = ageDifference / this.planetAgeRatio[planet];
             const toFixed = Math.floor(convertedAge * 100) / 100; 
             ageMap.set(planet, toFixed);
-        };
+        }
         return Object.fromEntries(ageMap);
     }
 }

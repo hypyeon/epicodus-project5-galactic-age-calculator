@@ -26,15 +26,9 @@ $secondaryColor: ;
 body {
     width: 100vw;
     height: 100vh;
-    background-color: rgb(3, 0, 54);
+    background-color: rgb(2, 0, 35);
     gap: 3rem;
     font-family: $primaryFont;
-    h1 {
-        font-family: $fontTitle;
-        text-shadow: 0 0 15px rgb(71, 255, 212);
-        color: rgba(255, 255, 255, 0.95);
-        letter-spacing: 2px;
-    }
 }
 .flex {
     display: flex;
@@ -58,6 +52,20 @@ body {
 .absolute {
     position: absolute;
 }
+.hidden {
+    display: none;
+}
+section {
+    height: 85vh;
+    h1 {
+        font-family: $fontTitle;
+        font-size: 2.5rem;
+        text-shadow: 0 0 15px rgb(71, 255, 212);
+        color: rgba(255, 255, 255, 0.95);
+        letter-spacing: 2px;
+        margin-bottom: 4rem;
+    }
+}
 form {
     gap: 2rem;
     input {
@@ -70,29 +78,42 @@ form {
         background-color: aliceblue;
     }
     button {
-        background-color: yellow;
+        background-color: black;
+        color: rgb(255, 255, 164);
         border: 0;
         border-radius: 8px;
         padding: .5rem 1.5rem;
         font-family: $primaryFont;
-        box-shadow: 0 0 10px yellow;
+        box-shadow: 0 0 15px rgba(255, 255, 0, 0.5);
         letter-spacing: 1px;
     }
     button:hover{
-        background-color: yellowgreen;
+        color: yellow;
+        letter-spacing: 2px;
+        padding: .5rem calc(1.5rem - 4.5px);
         cursor: pointer;
     }
 }
 #planets {
     gap: 2rem;
     color: white;
-    margin-top: 2rem;
+    margin-top: 4rem;
     .planet {
-        background-color: black;
         padding: 1rem 2rem;
-        height: 6rem;
-        border: 1px solid white;
+        height: 10rem;
+        box-shadow: 0 0 10px white;
+        width: 15vw;
         border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        div {
+            text-align: center;
+            p {
+                padding: .25rem 0;
+            }
+        }
     }
     .planetName {
         font-weight: 700;
@@ -109,5 +130,15 @@ form {
     }
     #yellow {
         text-shadow: 0 0 8px yellow;
+    }
+}
+#explanation {
+    color: rgba(255, 255, 255, 0.85);
+    height: 15vh;
+    width: fit-content;
+    margin: auto;
+    h3 {
+        color: rgba(255, 255, 0, 0.85);
+        padding-bottom: 1rem;
     }
 }
