@@ -13,7 +13,14 @@ export default class AgeCalculator {
         return Math.floor(result * 100) / 100;
     }
     yearsSincePast(pastAge) {
-
+        const ageDifference = this.earthAge - pastAge;
+        const ageMap = new Map();
+        for (const planet in this.planetAgeRatio) {
+            const convertedAge = ageDifference / this.planetAgeRatio[planet];
+            const toFixed = Math.floor(convertedAge * 100) / 100; 
+            ageMap.set(planet, toFixed);
+        };
+        return Object.fromEntries(ageMap);
     }
     yearsUntilFuture(futureAge) {
 
