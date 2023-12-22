@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+
+$fontTitle: 'Rubik Doodle Shadow';
+$primaryFont: 'Ubuntu', sans-serif;;
 /*
-$primaryFont: ;
 $secondaryFont: ;
 $primaryColor: ;
 $secondaryColor: ;
@@ -18,6 +22,18 @@ $secondaryColor: ;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(3, 0, 54);
+    gap: 3rem;
+    font-family: $primaryFont;
+    h1 {
+        font-family: $fontTitle;
+        text-shadow: 0 0 18px yellow;
+        color: rgba(255, 255, 255, 0.95);
+    }
 }
 .flex {
     display: flex;
@@ -40,4 +56,57 @@ $secondaryColor: ;
 }
 .absolute {
     position: absolute;
+}
+form {
+    gap: 2rem;
+    input {
+        width: 8.75rem;
+        padding: .25rem .5rem;
+        margin: 0 .25rem;
+        font-family: $primaryFont;
+        border: 1px solid aliceblue;
+        border-radius: 3px;
+        background-color: aliceblue;
+    }
+    button {
+        background-color: yellow;
+        border: 0;
+        border-radius: 8px;
+        padding: .5rem 1.5rem;
+        font-family: $primaryFont;
+        box-shadow: 0 0 10px yellow;
+        letter-spacing: 1px;
+    }
+    button:hover{
+        background-color: yellowgreen;
+        cursor: pointer;
+    }
+}
+#planets {
+    gap: 2rem;
+    color: white;
+    margin-top: 2rem;
+    .planet {
+        background-color: black;
+        padding: 1rem 2rem;
+        height: 6rem;
+        border: 1px solid white;
+        border-radius: 15px;
+    }
+    .planetName {
+        font-weight: 700;
+        font-size: 1.25rem;
+    }
+    #brown {
+        text-shadow: 0 0 8px rgb(255, 138, 138);
+    }
+    #pink {
+        text-shadow: 0 0 8px rgb(255, 100, 250);
+    }
+    #orange {
+        text-shadow: 0 0 8px orange;
+    }
+    #yellow {
+        text-shadow: 0 0 8px yellow;
+    }
 }

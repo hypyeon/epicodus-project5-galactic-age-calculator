@@ -3,9 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Super Galactic Age</title>
 </head>
-<body>
-  
+<body class="flex col flex-center">
+  <h1>Super Galactic Age Calculator</h1>
+  <form class="flex col flex-center">
+    <div>
+      <input type="number" name="age" id="currentAge" min="1" placeholder="Your current age">
+      <input type="number" name="age" id="pastAge" min="1" placeholder="Your past age">
+      <input type="number" name="age" id="futureAge" min="1" placeholder="Your future age">  
+    </div>
+    <button id="calculate">calculate</button>
+  </form>
+  <div class="flex flex-center" id="planets">
+    <div class="planet">
+      <p>in <span class="planetName" id="brown">Mercury</span> year</p>
+      <p id="mercury"></p>
+    </div>
+    <div class="planet">
+      <p>in <span class="planetName" id="pink">Venus</span> year</p>
+      <p></p>
+    </div>
+    <div class="planet">
+      <p>in <span class="planetName" id="orange">Mars</span> year</p>
+      <p></p>
+    </div>
+    <div class="planet">
+      <p>in <span class="planetName" id="yellow">Jupiter</span> year</p>
+      <p id="jupiter"></p>
+    </div>
+  </div>
 </body>
 </html>
