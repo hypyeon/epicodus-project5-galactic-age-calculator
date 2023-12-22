@@ -28,11 +28,10 @@ by [Hayeong Pyeon](https://www.hayeong.website)
 * Run tests with Jest using `npm run test`.
 
 ## Link
-
+https://hypyeon.github.io/epicodus-project5-galactic-age-calculator/
 
 ## Known Bugs
-- No bug found.
-- Last updated: Dec 21, 2023 
+- No bug found as of Dec 21, 2023 (last updated).
 
 ## License
 [MIT](/LICENSE.txt) Copyright © 2023 Hayeong Pyeon
