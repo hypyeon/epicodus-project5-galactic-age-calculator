@@ -1,6 +1,8 @@
 export default class AgeCalculator {
     constructor(earthAge, pastAge, futureAge) {
         this.earthAge = earthAge;
+        this.pastAge = pastAge;
+        this.futureAge = futureAge;
         this.planetAgeRatio = {
             Mercury: 0.24,
             Venus: 0.62,
@@ -11,6 +13,9 @@ export default class AgeCalculator {
     calculate(planet) {
         const result = this.earthAge / this.planetAgeRatio[planet];
         return Math.floor(result * 100) / 100;
+    }
+    ageMapBuilder(ageDifference) {
+
     }
     yearsSincePast(pastAge) {
         const ageDifference = this.earthAge - pastAge;
