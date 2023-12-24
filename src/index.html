@@ -9,14 +9,27 @@
   <section class="flex col flex-center">
     <h1>Super Galactic Age Calculator 👽✨</h1>
     <form class="flex col flex-center">
-      <div>
-        <input type="number" name="age" id="currentAge" min="1" placeholder="Your current age" required>
-        <input type="number" name="age" id="pastAge" min="1" placeholder="Your past age" required>
-        <input type="number" name="age" id="futureAge" min="1" placeholder="Your future age" required>  
+      <div class="flex col flex-center" id="input">
+        <div>
+          <label for="currentAge">Your birthday: </label>
+          <input type="date" name="age" id="currentAge" required>  
+        </div>
+        <div>
+          <input type="number" name="age" id="pastAge" min="1" placeholder="Your past age" required>
+          <input type="number" name="age" id="futureAge" min="1" placeholder="Your future age" required>    
+        </div>
       </div>
       <button type="submit" id="calculate">calculate</button>
     </form>  
     <div class="flex flex-center" id="planets">
+      <div class="planet">
+        <p>in <span class="planetName" id="blue">Earth</span> year</p>
+        <div>
+          <p id="earth-now"></p>
+          <p id="earth-since"></p>
+          <p id="earth-until"></p>  
+        </div>
+      </div>
       <div class="planet">
         <p>in <span class="planetName" id="brown">Mercury</span> year</p>
         <div>

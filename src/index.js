@@ -2,7 +2,23 @@ import './css/styles.scss';
 import AgeCalculator from './js/calculator';
 
 function getAge(id) {
-    return document.getElementById(id).value;
+    if (id === "currentAge") {
+        const birthdayInput = document.getElementById("currentAge").value;
+        const birthday = new Date(birthdayInput);
+        const currentDate = new Date();
+        const age = currentDate.getFullYear() - birthday.getFullYear();
+        if (
+            currentDate.getMonth() < birthday.getMonth() ||
+            (currentDate.getMonth() === birthday.getMonth() && currentDate.getDate() < birthday.getDate())
+        ) {
+            // if birthday hasn't occurred yet
+            return age - 1;
+        } else {
+            return age;
+        }    
+    } else {
+        return document.getElementById(id).value;
+    }
 }
 function updatePlanetInfo(current, since, until, ageCalculator, planet) {
     current.innerText = ageCalculator.calculate(planet);
@@ -43,6 +59,10 @@ function formHandler() {
         const currentAge = getAge("currentAge");
         const pastAge = getAge("pastAge");
         const futureAge = getAge("futureAge");
+
+        document.getElementById("earth-now").innerText = currentAge;
+        document.getElementById("earth-since").innerText = currentAge - pastAge;
+        document.getElementById("earth-until").innerText = futureAge - currentAge;
 
         const ageCalculator = new AgeCalculator(currentAge, pastAge, futureAge);
 
