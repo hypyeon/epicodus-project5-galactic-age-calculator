@@ -1,5 +1,5 @@
 export default class AgeCalculator {
-    constructor(earthAge) {
+    constructor(earthAge, pastAge, futureAge) {
         this.earthAge = earthAge;
         this.planetAgeRatio = {
             Mercury: 0.24,
