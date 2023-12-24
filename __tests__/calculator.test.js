@@ -31,13 +31,13 @@ describe('AgeCalculator', () => {
         )
     });
     test('should create a map with keys as names of 4 planets and values as years of ages convered from earth current age and future age difference', () => {
-        const earthAge = new AgeCalculator(30);
-        expect(earthAge.yearsUntilFuture(60)).toEqual(
+        const earthAge = new AgeCalculator(30, 10, 50);
+        expect(earthAge.yearsUntilFuture()).toEqual(
             {
-                Mercury: 125,
-                Venus: 48.38,
-                Mars: 15.95,
-                Jupiter: 2.52
+                Mercury: 83.33,
+                Venus: 32.25,
+                Mars: 10.63,
+                Jupiter: 1.68
             }
         )
     });

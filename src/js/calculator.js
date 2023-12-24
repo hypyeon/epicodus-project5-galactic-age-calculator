@@ -27,14 +27,8 @@ export default class AgeCalculator {
         const ageDifference = this.earthAge - this.pastAge;
         return this.ageMapBuilder(ageDifference);
     }
-    yearsUntilFuture(futureAge) {
-        const ageDifference = futureAge - this.earthAge;
-        const ageMap = new Map();
-        for (const planet in this.planetAgeRatio) {
-            const convertedAge = ageDifference / this.planetAgeRatio[planet];
-            const toFixed = Math.floor(convertedAge * 100) / 100; 
-            ageMap.set(planet, toFixed);
-        }
-        return Object.fromEntries(ageMap);
+    yearsUntilFuture() {
+        const ageDifference = this.futureAge - this.earthAge;
+        return this.ageMapBuilder(ageDifference);
     }
 }
