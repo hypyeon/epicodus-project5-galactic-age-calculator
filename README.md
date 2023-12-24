@@ -32,7 +32,7 @@ by [Hayeong Pyeon](https://www.hayeong.website)
 https://hypyeon.github.io/epicodus-project5-galactic-age-calculator/
 
 ## Known Bugs
-- No bug found as of Dec 21, 2023 (last updated).
+- No bug found as of Dec 24, 2023 (last updated).
 
 ## License
 [MIT](/LICENSE.txt) Copyright © 2023 Hayeong Pyeon
