@@ -12,8 +12,7 @@ by [Hayeong Pyeon](https://www.hayeong.website)
 
 ## Technologies used
 - HTML5, SCSS, JavaScript
-- npm
-- Tests using Jest
+- npm, lint, Jest
 
 ## Description
 - This application calculates Earth years to those in 4 different planets: Mercury, Venus, Mars, and Jupiter.
@@ -29,7 +28,10 @@ by [Hayeong Pyeon](https://www.hayeong.website)
 6. Run tests with Jest using `npm run test`.
 
 ## Link
-https://hypyeon.github.io/epicodus-project5-galactic-age-calculator/
+https://hypyeon.github.io/epicodus-project5-galactic-age-calculator/   
+
+- Responsive designs applied
+- Currently the best devices to view this application are: desktops (1440x900 viewport recommended) and mobile (430x932 viewport recommended)
 
 ## Known Bugs
 - No bug found as of Dec 24, 2023 (last updated).
